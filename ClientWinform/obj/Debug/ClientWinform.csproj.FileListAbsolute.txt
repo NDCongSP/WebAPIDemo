@@ -1,0 +1,13 @@
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.csprojAssemblyReference.cache
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.Form1.resources
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.Properties.Resources.resources
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.csproj.GenerateResource.cache
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.csproj.CoreCompileInputs.cache
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\bin\Debug\ClientWinform.exe.config
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\bin\Debug\ClientWinform.exe
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\bin\Debug\ClientWinform.pdb
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\bin\Debug\Newtonsoft.Json.dll
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\bin\Debug\Newtonsoft.Json.xml
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.csproj.CopyComplete
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.exe
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI1\WebMVCAPI\ClientWinform\obj\Debug\ClientWinform.pdb

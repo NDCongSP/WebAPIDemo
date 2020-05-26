@@ -1,0 +1,82 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            Phần hướng dẫn sử dụng trang hiển thị sản phẩm
+
+        </div>
+        <div class="col-sm-4">
+            <form>
+                @*Phần tùy chọn cách hiên thị sản phẩm*@
+                <h4>Phần tùy chọn hiển thị sản phẩm</h4>
+                <div class="radio">
+                    <label style="font-size:10px;"><input type="radio" name="optradio" value="" />Chọn tất cả sản phẩm></label>
+                </div>
+                <div class="radio">
+                    <h4>Chọn hiển thị sản phẩm theo phân loại</h4>
+                    <div>
+                        <label style="font-size:10px;"><input type="radio" name="optradio" value="?catID=1" />Giày da</label>
+                    </div>
+                    <div>
+                        <label style="font-size:10px;"><input type="radio" name="optradio" value="?catID=2" />Túi xách</label>
+                    </div>
+                    <div>
+                        <label style="font-size:10px;"><input type="radio" name="optradio" value="?catID=3" />Vải sợi</label>
+                    </div>
+                    <div>
+                        <label style="font-size:10px;"><input type="radio" name="optradio" value="?catID=4" />Quần áo</label>
+                    </div>
+                    <div>
+                        <label style="font-size:10px;"><input type="radio" name="optradio" value="?catID=5" />Nón</label>
+                    </div>
+                </div>
+                <div class="radio disabled">
+                    <label style="font-size:10px;"><input type="radio" name="optradio" disabled />Chọn sản phẩm theo id:</label>
+                    <input type="text" size="4" disabled />
+                </div>
+
+                <button class="btn-primary" id="btnHienThi">Hiển thị</button>
+            </form>
+        </div>
+        <div class="col-sm-3" id="displayProducts"></div>
+        <div class="col-sm-3" id="displayProductId"></div>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript">
+        $('document').ready(function () {
+            $('#btnHienThi').click(function () {
+                if (!$('input:radio').is(':checked')) {
+                    alert('Bạn cần chọn chế độ hiển thị sản phẩm');
+                }
+                else {
+                    var rows = '';
+                    $('#displayProducts').empty();
+                    $.getJSON('http://localhost:54178/api/Products/' + $('input:radio:checked').val(), function (data) {
+                        $.each(data, function (key, val) {
+                            var idURL = '/api/Products/' + val.id;
+                            rows += '<p style="font-size:10px; font-weight:bold; color: darkblue;cursor:pointer" onClick=GetDetails("' + idURL + '")>' + val.name + '</p>'
+                        });
+
+                        $('#displayProducts').html(rows);
+                    });
+                }
+                return false;
+            });
+
+        });
+
+        function GetDetails(thamSoTruyen) {
+            $('#displayProductId').empty();
+            $.getJSON(thamSoTruyen, function (data) {
+                var str = '<p style="font-size:10px; font-weight:bold; color: darkgold;">id sản phẩm: ' + data.id + '</p>' +
+                    '<p style="font-size:10px; font-weight:bold; color: darkgold;">Tên sản phẩm: ' + data.name + '</p>' +
+                    '<p style="font-size:10px; font-weight:bold; color: darkgold;">Mô tả: ' + data.descripption + '</p>' +
+                    '<p style="font-size:10px; font-weight:bold; color: darkgold;">Gía bán: ' + data.price + '</p>' +
+                    '<p style="font-size:10px; font-weight:bold; color: darkgold;">Tồn kho: ' + data.unitInStock + '</p>'
+
+                $('#displayProductId').html(str);
+            });
+        }
+    </script>
+}

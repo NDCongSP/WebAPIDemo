@@ -1,0 +1,6 @@
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI\Models\bin\Debug\Models.dll
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI\Models\bin\Debug\Models.pdb
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI\Models\obj\Debug\Models.dll
+D:\Learn\code\Web API MVC\SourceCode\WebMVCAPI\Models\obj\Debug\Models.pdb
